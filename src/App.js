@@ -4,6 +4,7 @@ import { Header } from './components/Header/Header';
 import { About } from './components/About/About';
 import { Movies } from './components/Movies/Movies';
 import { Footer } from './components/Footer/Footer';
+import { Gallery } from './components/Gallery/Gallery';
 
 
 const GlobalStyle = createGlobalStyle`
@@ -40,7 +41,7 @@ body{
 
 
 main{
-    transition:1s  linear background;
+    transition:2s  linear background;
     padding:4rem 0;
     min-height: 100vh;
   &.scrolled{
@@ -69,7 +70,8 @@ export const App = () => {
       <Header />
       <main className={scroll ? 'scrolled' : null }>
         <About />
-        <Movies/>
+        <Movies />
+        <Gallery/>
       </main>
         <Footer />
       

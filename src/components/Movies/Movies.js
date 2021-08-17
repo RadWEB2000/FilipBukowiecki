@@ -8,7 +8,7 @@ const Wrapper = styled.div`
     height:auto;
     display:grid;
     grid-template-columns:1fr 1fr;
-    grid-gap:.5rem;
+    grid-row-gap: 1rem;
     grid-auto-rows:15rem;
     width:100vw;
 `
@@ -24,46 +24,27 @@ const Video = styled.iframe`
     height:15rem;
 `
 
-const Image = styled.div`
-    background:lime;
-    background-attachment:fixed;
-    background-image:url(${backstage});
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    filter:grayscale(70%);
-    width:100vw;
-    margin:4rem 0;
-    height:70rem;
-    max-height:60vh;
-`
+
+
+const YouTubeLinks = [
+    {link:'https://www.youtube.com/embed/wrd770kZnaE'},
+    {link:'https://www.youtube.com/embed/wqcfgE2LAV4'},
+    {link:'https://www.youtube.com/embed/DcJ9T3N6m3M'},
+    {link:'https://www.youtube.com/embed/xIFhanw-e44'},
+    {link:'https://www.youtube.com/embed/uPTmHk9sI0U'}
+]
+
+
 
 export const Movies = () => {
     return (
-        <>
         <Wrapper>
-            <VideoItem>
-                <Video src="https://www.youtube.com/embed/wrd770kZnaE" frameBorder='0' allowFullScreen className="video"/>
-            </VideoItem>
-
-            <VideoItem>
-                <Video src="https://www.youtube.com/embed/wqcfgE2LAV4" frameBorder='0' allowFullScreen className="video"/>
-            </VideoItem>
-
-            <VideoItem>
-                <Video src="https://www.youtube.com/embed/DcJ9T3N6m3M" frameBorder='0' allowFullScreen className="video"/>
-            </VideoItem>
-
-            <VideoItem>
-                <Video src="https://www.youtube.com/embed/xIFhanw-e44" frameBorder='0' allowFullScreen className="video"/>
-            </VideoItem>
-
-            <VideoItem>
-                <Video src="https://www.youtube.com/embed/uPTmHk9sI0U" frameBorder='0' allowFullScreen className="video"/>
-            </VideoItem>
+            {YouTubeLinks.map(e =>
+                <VideoItem>
+                    <Video src={e.link} frameBorder='0' allowFullScreen/>
+                </VideoItem>
+            )}
         </Wrapper>
-        <Image/>    
-        </>    
     )
 }
 

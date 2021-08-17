@@ -43,6 +43,7 @@ const Heading = styled.h2`
 
 const Text = styled.p`
     font-size:1.6rem;
+    padding:1rem;
 `
 const Line = styled.span`
     font-weight:300;
@@ -61,7 +62,7 @@ export const About = () => {
                 <Heading>O mnie</Heading>
                 <Text>
                     <Line>
-                        Na co dzień mieszkam w Poznaniu. Od 2019 komercyjnie zajmuję się szeroko pojętym wideo marketingiem. W mojej ofercie znajdują się nagrania wideo, montaż oraz realizacja transmisji. Oferuję unikalne podejście do tematyki audiowizualnej oraz maksimum zaangażowania przy każdym zleceniu. Do rejestrowania obrazu oraz dźwięku wykorzystuję najnowsze technologie.
+                        Na co dzień mieszkam w Poznaniu. Od 2019 komercyjnie zajmuję się szeroko pojętym video marketingiem. W mojej ofercie znajdują się nagrania wideo, montaż oraz realizacja transmisji. Oferuję unikalne podejście do tematyki audiowizualnej oraz maksimum zaangażowania przy każdym zleceniu. Do rejestrowania obrazu oraz dźwięku wykorzystuję najnowsze technologie.
                         Moim znakiem rozpoznawczym są szerokie ujęcia. Hobbystycznie zajmuję się tworzeniem krótkich filmów fabularnych.
                     </Line>
                     <br/>
