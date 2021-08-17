@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 *::selection{
-    background: #000;
+    background: #161616;
     color: #fff;
 }
 

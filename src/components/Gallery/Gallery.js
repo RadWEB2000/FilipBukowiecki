@@ -8,11 +8,11 @@ import samochod from './samochod.jpg';
 const GalleryStyle = styled.div`
     width:100vw;
     height:auto;
+    margin:2rem 0;
 `
 
 
 const Image = styled.div`
-    background:lime;
     background-attachment:fixed;
     background-image:url(${props => props.image});
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@ const Image = styled.div`
     background-size: cover;
     filter:grayscale(70%);
     width:100%;
-    margin:4rem 0;
+    margin:1rem 0;
     height:70rem;
     max-height:60vh;
 `
