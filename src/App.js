@@ -26,12 +26,13 @@ const GlobalStyle = createGlobalStyle`
     position: absolute;
 }
 
+
+
 body{
     background: #161616;
     color: #fff;
     font-family: 'Exo 2', sans-serif;
     overflow-x: hidden;
-    transition:.2s linear background;
     width: 100vw;
 
    
@@ -39,7 +40,8 @@ body{
 
 
 main{
-    transition:.5s linear background;
+    transition:1s  linear background;
+    padding:4rem 0;
     min-height: 100vh;
   &.scrolled{
     min-height: 100vh;

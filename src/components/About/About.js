@@ -6,7 +6,7 @@ const Wrapper = styled.div`
     display: grid;
     grid-template-columns:1fr 1fr;
     margin: 3rem 0;
-    padding: 1rem;
+    padding:1rem 0;
     height: auto;
     width: 100vw;
     overflow-x: hidden;
@@ -21,9 +21,10 @@ const Figure = styled.figure`
     background-repeat: no-repeat;
     background-position: center;
     justify-content: center;
+    margin:0 auto;
     display: flex;
-    width: 35rem;
-    height: 35rem;
+    width: 80%;
+    height: 40rem;
     overflow: hidden;
     position: relative;
 `
@@ -31,27 +32,25 @@ const Figure = styled.figure`
 
 
 const Content = styled.div`
-    background:lime;
-    border:2px solid #0ff;
-    border-radius:1rem;
+    color: #161616;
     overflow: hidden;
     text-align:center;
 `
 const Heading = styled.h2`
-    background:pink;
     font-size:4rem;
     font-weight:500;
 `
 
 const Text = styled.p`
-    background:green;
+    font-size:1.6rem;
 `
 const Line = styled.span`
-    background:aqua;
+    font-weight:300;
 `
 
 const Strong = styled.strong`
-    background:#f00;
+    font-size:2rem;
+   
 `
 
 export const About = () => {
@@ -65,8 +64,9 @@ export const About = () => {
                         Na co dzień mieszkam w Poznaniu. Od 2019 komercyjnie zajmuję się szeroko pojętym wideo marketingiem. W mojej ofercie znajdują się nagrania wideo, montaż oraz realizacja transmisji. Oferuję unikalne podejście do tematyki audiowizualnej oraz maksimum zaangażowania przy każdym zleceniu. Do rejestrowania obrazu oraz dźwięku wykorzystuję najnowsze technologie.
                         Moim znakiem rozpoznawczym są szerokie ujęcia. Hobbystycznie zajmuję się tworzeniem krótkich filmów fabularnych.
                     </Line>
-                    <br />
-                    <Strong>Zapraszam do obejrzenia przykładowych prac.</Strong>
+                    <br/>
+                    <br/>
+                    <Strong>Zapraszam do obejrzenia <br/> przykładowych prac.</Strong>
                 </Text>
             </Content>
         </Wrapper>
