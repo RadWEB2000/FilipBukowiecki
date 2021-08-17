@@ -27,6 +27,13 @@ const GlobalStyle = createGlobalStyle`
     position: absolute;
 }
 
+::-webkit-scrollbar{
+  width:.6rem;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #f5f5f5;
+}
 
 
 body{

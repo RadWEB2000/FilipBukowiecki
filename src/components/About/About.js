@@ -15,9 +15,8 @@ const Wrapper = styled.div`
 const Figure = styled.figure`
     align-items: center;
     background:lime;
-    background-attachment: fixed;
     background-image:url(${filip});
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
     justify-content: center;

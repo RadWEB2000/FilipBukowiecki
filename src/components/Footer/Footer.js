@@ -200,9 +200,11 @@ export const Footer = () => {
                 <Social href='#' target='_blank' rel="noreferrer"><YoutubeIcon/></Social>
             </Socials>
             <Wrapper>
-                <Form id="contactform" action="https://formsubmit.io/send/filip.bukowiecki@gmail.com" method="POST">
-                    <Input placeholder='Imię' type='text' name='firstName' id='firstName'/>
-                    <Input placeholder='Nazwisko' type='text' name='lastName' id='lastName'/>
+                <Form action="https://formsubmit.co/filip.bukowiecki@gmail.com" method="POST">
+                    <InputNone name="_redirect" type="hidden" id="name" value="https://filip-bukowiecki.vercel.app" />
+                    <Input placeholder='Imię' type='text' name='firstName' id='firstName' />
+                    <Input placeholder='Nazwisko' type='text' name='lastName' id='lastName' />
+                    <input type="hidden" name="_captcha" value="false"/>
                     <Input placeholder='Numer telefonu' type='tel' name='phoneNumber' id='phoneNumber'/>
                     <Input placeholder='Adres e-mail' type='email' name='emailAddress' id='emailAddress'/>
                     <InputNone name="_formsubmit_id" type="text"/>
@@ -217,3 +219,4 @@ export const Footer = () => {
         </FooterStyle>
     )
 }
+
