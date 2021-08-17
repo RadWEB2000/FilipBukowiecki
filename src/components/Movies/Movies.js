@@ -1,27 +1,36 @@
 import React from 'react';
 import styled from 'styled-components';
-import backstage from './backstage.jpg';
-
 
 const Wrapper = styled.div`
-    min-height:20rem;
-    height:auto;
     display:grid;
-    grid-template-columns:1fr 1fr;
-    grid-row-gap: 1rem;
+    height:auto;
     grid-auto-rows:15rem;
+    grid-row-gap: 1rem;
+    grid-template-columns:1fr 1fr;
+    min-height:20rem;
     width:100vw;
+
+    @media only screen and (max-width:700px){
+            grid-template-columns:1fr;
+    }
+      
 `
 
 const VideoItem = styled.div`
-    display:flex;
     align-items:center;
+    display:flex;
     justify-content: center;
 `
 
 const Video = styled.iframe`
-    width:70%;
     height:15rem;
+    width:70%;
+    
+    @media only screen and (max-width:700px){
+        @media (orientation:portrait){
+            width:95vw;
+        }
+    }
 `
 
 

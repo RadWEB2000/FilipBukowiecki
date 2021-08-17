@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import movie from './backgroundVideo.mp4'
 
 const HeaderStyle = styled.header`
-    background:#000;
+    background:#161616;
     height: 170rem;
     max-height:85vh;
     overflow: hidden;
@@ -18,10 +18,14 @@ const MovieWrapper = styled.video`
     position: absolute;
     top: 0;
     width: 100vw;
+    @media only screen and (max-width:700px){
+        display:none;
+    }
 `
 const Movie = styled.source`
     height:100%;
     width: 110%;
+    
 `
 const TextWrapper = styled.div`
     align-items: center;
@@ -38,6 +42,15 @@ const Heading = styled.h1`
     color: #f5f5f5;
     font-size: 5rem;
     text-shadow:0 0 15px #000;
+
+    @media only screen and (max-width:700px){
+        @media (orientation:portrait){
+            font-size:2rem;
+        }
+        @media (orientation:landscape){
+            font-size:3rem;
+        }
+    }
 `
 const Button = styled.button`
     background: none;
@@ -48,6 +61,7 @@ const Button = styled.button`
     font-size: 2rem;
     font-weight: 700;
     height: 3rem;
+    max-width:65vw;
     outline:none;
     position: relative;
     text-transform: uppercase;
@@ -66,6 +80,21 @@ const Button = styled.button`
     }
     &:hover::before{
         width: 100%;
+    }
+
+    @media only screen and (max-width:700px){
+        @media (orientation:portrait){
+            font-size:1.5rem;
+            &:hover{
+                transform: translateY(-.2rem);
+            }
+        }
+        @media (orientation:landscape){
+            font-size:1.75rem;
+            &:hover{
+                transform: translateY(-.2rem);
+            }
+        }
     }
 `
 

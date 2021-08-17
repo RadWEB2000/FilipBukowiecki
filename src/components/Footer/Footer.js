@@ -13,13 +13,13 @@ const Socials = styled.ul`
 const Social = styled.a`
     align-items: center;
     color:#161616;
+    display:flex;
     font-size:2.1rem;
     justify-content:center;
-    display:flex;
-    margin:.5rem 0;
-    width:4rem;
     height:4rem;
+    margin:.5rem 0;
     transition:.2s linear color;
+    width:4rem;
 
     &:hover:nth-of-type(1){
         color:#1877F2;
@@ -44,38 +44,49 @@ const Form = styled.form`
     align-items: center;
     display:flex;
     flex-direction: column;
-    margin:.45rem 0;
     justify-content: center;
+    margin:.45rem 0;
 `
-
 
 const Input = styled.input`
     background:#f5f5f5;
     border:none;
     border-bottom:.1rem solid #161616;
-    outline:none;
-    width:25rem;
-    height:3rem;
-    margin:.45rem 0;
-    max-width:70vw;
-    position:relative;
-    transition:.2s linear border;
-    text-align:center;
     font-size:1.6rem;
     font-weight:300;
+    height:3rem;
+    margin:.45rem 0;
+    max-width:95vw;
+    outline:none;
+    position:relative;
+    text-align:center;
+    transition:.2s linear border;
+    width:25rem;
 
     &::placeholder{
-        text-transform: uppercase;
         font-size:1.6rem;
-        position:absolute;
-        top:50%;
         left:50%;
+        position:absolute;
+        text-transform: uppercase;
+        top:50%;
         transform: translate(-50%,-50%);
     }
 
     &:focus{
-        transition:.2s linear border;
         border-bottom:.15rem solid #161616;
+        transition:.2s linear border;
+    }
+
+    @media only screen and (max-width:700px){
+        @media (orientation:portrait){
+            font-size:1.2rem;
+            height:2rem;
+            margin:.25rem 0;
+            width:85vw;
+            &::placeholder{
+                font-size:1rem;
+            }
+        }
     }
 
 `
@@ -85,76 +96,84 @@ const InputNone = styled.input`
 `
 
 const Textarea = styled.textarea`
-    background:grey;
-    width:25rem;
     background:#f5f5f5;
-    outline:none;
-    border:none;
-    transition:.2s linear border;
     border:.1rem solid #161616;
-    padding:.2rem;
-    max-width:70vw;
     font-size:1.5rem;
-    margin:.75rem 0;
     height:9rem;
+    margin:.75rem 0;
+    max-width:95vw;
+    outline:none;
+    padding:.2rem;
+    transition:.2s linear border;
+    width:25rem;
 
     &::-webkit-scrollbar{
         width:0;
     }
 
-     &:focus{
-        transition:.2s linear border;
+    &:focus{
         border:.15rem solid #161616;
+        transition:.2s linear border;
     }
 
-      &::placeholder{
-        text-transform: uppercase;
+    &::placeholder{
         font-size:1.6rem;
-        position:absolute;
-        top:50%;
         left:50%;
+        position:absolute;
+        text-transform: uppercase;
+        top:50%;
         transform: translate(-50%,-50%);
     }
+
+     @media only screen and (max-width:700px){
+        @media (orientation:portrait){
+            font-size:1.2rem;
+            margin:.25rem 0;
+            width:85vw;
+            &::placeholder{
+                font-size:1rem;
+            }
+        }
+    }
+
 `
 const Button = styled.button`
-    cursor:pointer;
-    width:12rem;
-    color:#161616;
-    border:none;
     background:none;
-    outline:none;
-    margin:.75rem 0;
+    border:none;
+    color:#161616;
+    cursor:pointer;
     font-size:2.5rem;
     font-weight:700;
-    position:relative;
-    overflow: hidden;
-    text-transform: uppercase;
     height:4rem;
-
-
+    margin:.75rem 0;
+    overflow: hidden;
+    outline:none;
+    position:relative;
+    text-transform: uppercase;
+    width:12rem;
 
     &::before{
+        border-bottom:.2rem solid #161616;
+        border-top:.2rem solid #161616;
+        height:90%;
+        left:0;
         position:absolute;
         top:50%;
-        left:0;
         transform: translateY(-50%);
-        width: 0%;
-        height:90%;
         transition:.2s linear width;
-        border-top:.2rem solid #161616;
-        border-bottom:.2rem solid #161616;
+        width: 0%;
     }
 
     &::after{
-        position:absolute;
-        top:50%;
-        left:50%;
-        transform: translate(-50%,-50%);
-        width: 90%;
-        height:0%;
-        transition:.2s .2s linear height;
         border-left:.2rem solid #161616;
         border-right:.2rem solid #161616;
+        height:0%;
+        left:50%;
+        position:absolute;
+        top:50%;
+        transform: translate(-50%,-50%);
+        transition:.2s .2s linear height;
+        width: 90%;
     }
 
     &:hover::before{
@@ -165,8 +184,17 @@ const Button = styled.button`
     &:hover::after{
         height:90%;
     }
-`
 
+    @media only screen and (max-width:700px){
+        @media (orientation:portrait){
+            font-size:1.8rem;
+            font-weight: 500;
+            height:3rem;
+            margin:.75rem 0;
+            width:10rem;
+        }
+    }
+`
 
 const MyLink = styled.a`
     align-items: center;
@@ -183,6 +211,13 @@ const MyLink = styled.a`
 
     &:hover{
         opacity:1;
+    }
+    
+    @media only screen and (max-width:700px){
+        @media (orientation:portrait){
+            font-size:1.1rem;
+            padding:.4rem  0;
+        }
     }
 `
 
