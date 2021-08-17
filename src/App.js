@@ -68,20 +68,18 @@ export const App = () => {
         } else {
             scrollToggle(false)
         }
-    })
-
-
+   })
+  
   return (
     <>
       <GlobalStyle />
       <Header />
-      <main className={scroll ? 'scrolled' : null }>
-        <About />
-        <Movies />
-        <Gallery/>
-      </main>
-        <Footer />
-      
+        <main className={scroll ? 'scrolled' : null }>
+          <About />
+          <Movies />
+          <Gallery/>
+        </main>
+      <Footer />
     </>
   );
 }

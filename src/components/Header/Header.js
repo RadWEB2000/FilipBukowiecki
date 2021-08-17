@@ -52,7 +52,7 @@ const Heading = styled.h1`
         }
     }
 `
-const Button = styled.button`
+const Button = styled.a`
     background: none;
     border:none;
     bottom: 0;
@@ -64,6 +64,7 @@ const Button = styled.button`
     max-width:65vw;
     outline:none;
     position: relative;
+    text-decoration:none;
     text-transform: uppercase;
     transition:.2s linear transform;
     width: 15rem;
@@ -101,11 +102,12 @@ const Button = styled.button`
 export const Header = () => {
     return (
         <HeaderStyle>
-            <MovieWrapper>
-                <Movie autoPlay loop muted type='video/mp4' src={movie}/>
+            <MovieWrapper autoPlay loop muted>
+                <Movie type='video/mp4' src={movie}/>
             </MovieWrapper>
             <TextWrapper>
                 <Heading>FilipBukowiecki</Heading>
+
                 <Button>go next</Button>
             </TextWrapper>
         </HeaderStyle>

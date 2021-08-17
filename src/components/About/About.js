@@ -100,7 +100,7 @@ const Strong = styled.strong`
 
 export const About = () => {
     return (
-        <Wrapper>
+        <Wrapper id='about'>
             <Figure/>
             <Content>
                 <Heading>O mnie</Heading>

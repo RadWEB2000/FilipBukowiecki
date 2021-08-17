@@ -230,9 +230,9 @@ export const Footer = () => {
     return (
         <FooterStyle>
             <Socials>
-                <Social href='#' target='_blank' rel="noreferrer"><FacebookIcon/></Social>
-                <Social href='#' target='_blank' rel="noreferrer"><InstagramIcon/></Social>
-                <Social href='#' target='_blank' rel="noreferrer"><YoutubeIcon/></Social>
+                <Social href='https://www.facebook.com/filip.bukowiecki.58' target='_blank' rel="noreferrer"><FacebookIcon/></Social>
+                <Social href='https://www.instagram.com/zjadacz_seriali/?hl=pl' target='_blank' rel="noreferrer"><InstagramIcon/></Social>
+                <Social href='https://youtube.com/channel/UChK4HgsDY8p1kOQfMdAPC0A' target='_blank' rel="noreferrer"><YoutubeIcon/></Social>
             </Socials>
             <Wrapper>
                 <Form action="https://formsubmit.co/filip.bukowiecki@gmail.com" method="POST">
