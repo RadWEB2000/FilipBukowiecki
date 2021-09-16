@@ -108,7 +108,7 @@ export const Header = () => {
             <TextWrapper>
                 <Heading>FilipBukowiecki</Heading>
 
-                <Button>go next</Button>
+//                 <Button>go next</Button>
             </TextWrapper>
         </HeaderStyle>
     )
