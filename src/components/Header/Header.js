@@ -107,8 +107,6 @@ export const Header = () => {
             </MovieWrapper>
             <TextWrapper>
                 <Heading>FilipBukowiecki</Heading>
-
-//                 <Button>go next</Button>
             </TextWrapper>
         </HeaderStyle>
     )
